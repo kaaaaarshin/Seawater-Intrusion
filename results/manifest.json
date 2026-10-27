@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-10-27T06:40:38.155273+00:00",
+  "registration": "physics-based analytical simulation; not field observations",
+  "app_version": "1.0.0",
+  "model_version": "sun2026-confined-cutoff-v1",
+  "paper": {
+    "title": "A novel analytical solution for quantifying seawater intrusion in coastal aquifers embedded with a cutoff wall",
+    "journal": "Advances in Water Resources 212 (2026) 105301",
+    "doi": "10.1016/j.advwatres.2026.105301",
+    "source_pdf": "docs/reference/Sun2026_CutoffWall.pdf",
+    "algorithm_screenshot": "docs/reference/algorithm_1.jpeg"
+  },
+  "configuration": {
+    "correction_mode": "pool_carrera_flux",
+    "wall_locations_m": [
+      0.0,
+      38.0,
+      77.0,
+      115.0
+    ],
+    "wall_opening_heights_m": [
+      6.0,
+      12.0,
+      18.0,
+      24.0
+    ],
+    "default_parameters": {
+      "H_m": 30.0,
+      "H_s_m": 35.0,
+      "K_a_m_per_day": 10.0,
+      "K_w_m_per_day": 0.001,
+      "wall_thickness_m": 1.0,
+      "q_f_m2_per_day": 0.36,
+      "rho_f_kg_per_m3": 1000.0,
+      "rho_s_kg_per_m3": 1025.0,
+      "alpha_T_m": 0.1
+    }
+  },
+  "case_count": 16,
+  "successful_cases": 16,
+  "failed_cases": 0,
+  "errors": [],
+  "validation_status": "passed",
+  "validation_summary": {
+    "validation_status": "passed",
+    "math_status": "passed",
+    "paper_status": "passed",
+    "total_checks": 14,
+    "passed_checks": 14,
+    "failed_checks": 0,
+    "not_applicable_checks": 0
+  },
+  "assumptions": [
+    "Steady state",
+    "Confined aquifer",
+    "Sharp interface",
+    "Constant inland freshwater flux",
+    "Dupuit-Forchheimer approximation",
+    "No local 2D flow resolution near the wall"
+  ],
+  "files": {
+    "cases_csv": "/Users/karshin/seawater-intrusion-capstone/data/simulation_cases.csv",
+    "results_csv": "/Users/karshin/seawater-intrusion-capstone/results/simulation_results.csv",
+    "profiles_csv": "/Users/karshin/seawater-intrusion-capstone/results/profiles.csv",
+    "manifest_json": "/Users/karshin/seawater-intrusion-capstone/results/manifest.json"
+  },
+  "sha256": {
+    "cases_csv": "76b8213a8704a5808cdb5cce0dc25aac895f1838d3260e4fda3b70f47c55fd78",
+    "results_csv": "cd52438c0626a56e6021dd6afcdfda317b735ebbe4526850e26ff44998cabdc0",
+    "profiles_csv": "8ac63f958e84503709e98c1c8b3fd72a0dd964c30aaf314e9ff5ad33b319f0cd"
+  }
+}
